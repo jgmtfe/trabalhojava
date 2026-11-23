@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dino Color Runner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <main class="container">
+    <header class="topo">
+      <h1>DINO RUNNER</h1>
+      <!-- Degrau Mínimo: botão que muda a página usando if/else -->
+      <button id="btnTema" type="button">Modo Claro</button>
+    </header>
+
+    <!-- Degrau Intermediário: leitura de campos e validação -->
+    <section class="painel-config">
+      <div class="campos">
+        <input type="text" id="inputNome" placeholder="O seu nome">
+        <input type="text" id="inputMeta" placeholder="Meta de pontos (ex: 100)">
+        <button id="btnConfirmar" type="button">Definir</button>
+      </div>
+      <p id="mensagemValidacao" class="mensagem-status">Preenche o nome e uma meta numérica para personalizar o jogo.</p>
+    </section>
+
+    <p class="instrucao">Clique na tela do jogo (ou use a tecla Espaço) para saltar e mudar a cor do cenário!</p>
+    
+    <div class="game-wrapper">
+      <canvas id="gameCanvas" width="800" height="300"></canvas>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
